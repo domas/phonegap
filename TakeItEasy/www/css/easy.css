@@ -1,0 +1,43 @@
+/* span#msg_container */
+div#tail{
+	background-image:url('../img/hexagon_200x200.png');
+	background-repeat:no-repeat;
+	width:200px;
+	height:200px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0 ;
+	position: relative;
+	left: 50%;
+	margin-left: -100px;
+}
+
+div#tail span.line_number {
+	display:block;
+	width:30px;
+    color:white;
+    position: absolute;
+    font-size: 24px;
+}
+
+span#left_line {
+	top: 120px;
+	left: 45px;
+}
+
+span#right_line {
+	top: 120px;
+	right: 30px;
+}
+
+span#middle_line {
+	top: 30px;
+	left: 90px;
+}
+
+#tail_nr {
+	margin-left: 4px;
+}
+
+#tails_history_container {
+	text-align: center;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Take It Easy</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/easy.css" />
+	
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="easy">
+
+	<div data-role="header">
+		<h1>Take It Easy</h1>
+	</div>
+
+	<div data-role="content">
+		
+		<div id="tail">
+			<span id="middle_line" class="line_number">x</span>
+			<span id="left_line" class="line_number">x</span>
+			<span id="right_line" class="line_number">x</span>
+		</div>
+		
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><a id="prev_btn"  href="#" data-theme="b" data-role="button" data-icon="arrow-l" >previous</a></div>
+			<div class="ui-block-b"><a id="next_btn"  href="#" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right">next</a></div>
+		</div>
+     	
+		<div id="timer">
+			
+		</div>
+		
+		<p><a href="#stats" data-role="button" data-transition="flip">Show used tails</a></p>
+	</div>
+		
+	<div data-role="footer" data-theme="a" data-position="fixed" class="ui-bar ui-grid-b ui-footer ui-bar-a">
+			<div class="ui-block-a" style="margin-top:12px;"><h3>Tail: </h3><span id="tail_nr">press next</span></div>
+			<div class="ui-block-b"></div>
+			<div class="ui-block-c">
+				<div style="margin-right:20px;">
+					<a id="reset_btn" href="#" data-theme="b" data-role="button" data-icon="refresh">reset</a>
+				</div>
+			</div>
+	</div>
+
+</div>
+
+<div data-role="page" id="stats" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Tails</h1>
+	</div>
+	<div data-role="content">
+		<div id="tails_history_container">
+			<span id="no_tiles_msg">No tails used so far</span>
+			<ul id="tails_list" data-role="listview">
+			</ul>
+		</div>
+	</div>
+
+	
+</div>
+
+  <script src="js/easy.js"></script>
+</body>
+</html>
